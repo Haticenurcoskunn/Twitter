@@ -12,10 +12,8 @@ DrawerHeader buildDrawerHeader(BuildContext context) {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          buildCircleAvatar(
-              'https://www.hepsiburada.com/kesfet/wp-content/uploads/2020/11/iStock-1063193874-800x533.jpg',
-              25),
-          twitterTopInfoTitle(context, '', '')
+          buildCircleAvatar('https://www.hepsiburada.com/kesfet/wp-content/uploads/2020/11/iStock-1063193874-800x533.jpg', 25),
+          twitterTopInfoTitle(context, '', '', heightRatio: 10),
         ],
       ));
 }

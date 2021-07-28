@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_first_app/utils/custom_widget/divider.dart';
 import 'package:flutter_first_app/utils/custom_widget/round_image_with_border.dart';
-import 'package:flutter_first_app/utils/custom_widget/title.dart';
 import 'package:flutter_first_app/utils/tweet_structure/bottom_sheet_info.dart';
 import 'package:flutter_first_app/utils/tweet_structure/buttons.dart';
 

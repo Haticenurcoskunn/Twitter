@@ -41,21 +41,24 @@ class _CommentPageState extends State<CommentPage> {
           ],
           leading: buildAppbarLeading(context),
         ),
-        body: Row(
-          children: [
-            Container(
-              margin: EdgeInsets.only(left: 10),
-              child: buildVerticalDivider(),
-            ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                buildDivider(),
-                buildTitles(),
-                Padding(
-                  padding: const EdgeInsets.only(top: 40),
-                  child: Row(
+        body: SizedBox(
+          height: MediaQuery.of(context).size.height / 16,
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 41),
+                    child: Container(
+                      color: Colors.grey,
+                    ),
+                  ),
+                  Text('@kullaniciadi' + 'adli kisiye yanit olarak'),
+                ],
+              ),
+              Row(
+                children: [
+                  Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       buildRoundImage(
@@ -64,11 +67,11 @@ class _CommentPageState extends State<CommentPage> {
                           90),
                       buildTextFormField(),
                     ],
-                  ),
-                )
-              ],
-            ),
-          ],
+                  )
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );

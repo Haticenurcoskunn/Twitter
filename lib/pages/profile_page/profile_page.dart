@@ -4,7 +4,6 @@ import 'package:flutter_first_app/pages/profile_page/source/persons_list.dart';
 import 'package:flutter_first_app/pages/profile_page/widgets/image_and_button.dart.dart';
 import 'package:flutter_first_app/pages/profile_page/source/content_list.dart';
 import 'package:flutter_first_app/pages/profile_page/widgets/top_info_title.dart';
-import 'package:flutter_first_app/utils/tweet_structure/tweet_structure.dart';
 
 class ProfilePage extends StatefulWidget {
   @override

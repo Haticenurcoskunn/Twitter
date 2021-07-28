@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_first_app/navigation/navigation.dart';
+import 'package:flutter_first_app/utils/custom_widget/navigation/navigation.dart';
 
 
 void main() {

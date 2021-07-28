@@ -18,7 +18,7 @@ List<Widget> storyImageList(BuildContext context) {
   var widgetList = <Widget>[];
 
   for (var i = 0; i < profilePicture.length; i++) {
-    widgetList.add(buildRoundImageWithBorder(
+    widgetList.add(buildRoundImageWithBorder(context,
              profilePicture[i],40,100,100));
       }
     
@@ -31,6 +31,8 @@ List<Widget> storyImageList(BuildContext context) {
       height: 100,
       child: ListView(
       reverse: false,
+      shrinkWrap: true,
+      physics: ClampingScrollPhysics(),
       scrollDirection: Axis.horizontal,
       children: storyImageList(context),
 ),

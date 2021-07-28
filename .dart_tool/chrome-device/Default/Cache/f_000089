@@ -1,0 +1,1637 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter_first_app/utils/custom_widget/divider.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/widgets/single_child_scroll_view.dart', 'packages/flutter_first_app/pages/home_page/source/story_image_list.dart', 'packages/flutter/src/material/app.dart', 'packages/flutter/src/material/colors.dart', 'packages/flutter/src/widgets/preferred_size.dart', 'packages/flutter_first_app/utils/custom_widget/elevated_button.dart', 'packages/flutter/src/material/page.dart', 'packages/flutter_first_app/utils/custom_widget/blue_icons.dart', 'packages/flutter/src/material/icons.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/flutter/src/rendering/flex.dart', 'packages/flutter_first_app/utils/custom_widget/title.dart', 'packages/flutter_first_app/utils/custom_widget/round_image.dart', 'packages/flutter/src/material/text_form_field.dart', 'packages/flutter/src/painting/strut_style.dart', 'packages/flutter/src/material/input_border.dart', 'packages/flutter/src/widgets/icon.dart', 'packages/flutter_first_app/utils/custom_widget/round_image_with_border.dart'], (function load__packages__flutter_first_app__pages__home_page__widgets__tweeted_out_info_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__flutter_first_app__utils__custom_widget__divider$46dart, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__widgets__single_child_scroll_view$46dart, packages__flutter_first_app__pages__home_page__source__story_image_list$46dart, packages__flutter__src__material__app$46dart, packages__flutter__src__material__colors$46dart, packages__flutter__src__widgets__preferred_size$46dart, packages__flutter_first_app__utils__custom_widget__elevated_button$46dart, packages__flutter__src__material__page$46dart, packages__flutter_first_app__utils__custom_widget__blue_icons$46dart, packages__flutter__src__material__icons$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__flutter__src__rendering__flex$46dart, packages__flutter_first_app__utils__custom_widget__title$46dart, packages__flutter_first_app__utils__custom_widget__round_image$46dart, packages__flutter__src__material__text_form_field$46dart, packages__flutter__src__painting__strut_style$46dart, packages__flutter__src__material__input_border$46dart, packages__flutter__src__widgets__icon$46dart, packages__flutter_first_app__utils__custom_widget__round_image_with_border$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const _interceptors = dart_sdk._interceptors;
+  const ui = dart_sdk.ui;
+  const _internal = dart_sdk._internal;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const gesture_detector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__gesture_detector;
+  const navigator = packages__flutter__src__widgets__widget_span$46dart.src__widgets__navigator;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const divider = packages__flutter_first_app__utils__custom_widget__divider$46dart.utils__custom_widget__divider;
+  const scaffold = packages__flutter__src__material__icon_button$46dart.src__material__scaffold;
+  const theme_data = packages__flutter__src__material__icon_button$46dart.src__material__theme_data;
+  const app_bar = packages__flutter__src__material__icon_button$46dart.src__material__app_bar;
+  const divider$ = packages__flutter__src__material__icon_button$46dart.src__material__divider;
+  const input_decorator = packages__flutter__src__material__icon_button$46dart.src__material__input_decorator;
+  const icon_button = packages__flutter__src__material__icon_button$46dart.src__material__icon_button;
+  const list_tile = packages__flutter__src__material__icon_button$46dart.src__material__list_tile;
+  const single_child_scroll_view = packages__flutter__src__widgets__single_child_scroll_view$46dart.src__widgets__single_child_scroll_view;
+  const story_image_list = packages__flutter_first_app__pages__home_page__source__story_image_list$46dart.pages__home_page__source__story_image_list;
+  const app = packages__flutter__src__material__app$46dart.src__material__app;
+  const colors = packages__flutter__src__material__colors$46dart.src__material__colors;
+  const preferred_size = packages__flutter__src__widgets__preferred_size$46dart.src__widgets__preferred_size;
+  const elevated_button = packages__flutter_first_app__utils__custom_widget__elevated_button$46dart.utils__custom_widget__elevated_button;
+  const page = packages__flutter__src__material__page$46dart.src__material__page;
+  const blue_icons = packages__flutter_first_app__utils__custom_widget__blue_icons$46dart.utils__custom_widget__blue_icons;
+  const icons = packages__flutter__src__material__icons$46dart.src__material__icons;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const flex = packages__flutter__src__rendering__flex$46dart.src__rendering__flex;
+  const title = packages__flutter_first_app__utils__custom_widget__title$46dart.utils__custom_widget__title;
+  const round_image = packages__flutter_first_app__utils__custom_widget__round_image$46dart.utils__custom_widget__round_image;
+  const text_form_field = packages__flutter__src__material__text_form_field$46dart.src__material__text_form_field;
+  const text_style = packages__flutter__src__painting__strut_style$46dart.src__painting__text_style;
+  const input_border = packages__flutter__src__material__input_border$46dart.src__material__input_border;
+  const icon = packages__flutter__src__widgets__icon$46dart.src__widgets__icon;
+  const round_image_with_border = packages__flutter_first_app__utils__custom_widget__round_image_with_border$46dart.utils__custom_widget__round_image_with_border;
+  var tweeted_out_info = Object.create(dart.library);
+  var home_page = Object.create(dart.library);
+  var comment_page = Object.create(dart.library);
+  var buttons = Object.create(dart.library);
+  var tweet_structure = Object.create(dart.library);
+  var $toString = dartx.toString;
+  dart._checkModuleNullSafetyMode(true);
+  var T = {
+    JSArrayOfWidget: () => (T.JSArrayOfWidget = dart.constFn(_interceptors.JSArray$(framework.Widget)))(),
+    BuildContextToHomePage: () => (T.BuildContextToHomePage = dart.constFn(dart.fnType(home_page.HomePage, [framework.BuildContext])))(),
+    VoidTovoid: () => (T.VoidTovoid = dart.constFn(dart.fnType(dart.void, [])))(),
+    BuildContextToCommentPage: () => (T.BuildContextToCommentPage = dart.constFn(dart.fnType(comment_page.CommentPage, [framework.BuildContext])))(),
+    WidgetN: () => (T.WidgetN = dart.constFn(dart.nullable(framework.Widget)))()
+  };
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 12,
+        [_Location_line]: 8,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2], widget_inspector._Location);
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 7,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/pages/home_page/widgets/tweeted_out_info.dart"
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 11,
+        [_Location_line]: 18,
+        [_Location_file]: null
+      });
+    },
+    get C4() {
+      return C[4] = dart.constList([C[5] || CT.C5], widget_inspector._Location);
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[4] || CT.C4,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 17,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/pages/home_page/home_page.dart"
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 17,
+        [_Location_file]: null
+      });
+    },
+    get C7() {
+      return C[7] = dart.constList([C[8] || CT.C8], widget_inspector._Location);
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[7] || CT.C7,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 16,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/pages/home_page/home_page.dart"
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "body",
+        [_Location_column]: 7,
+        [_Location_line]: 16,
+        [_Location_file]: null
+      });
+    },
+    get C10() {
+      return C[10] = dart.constList([C[11] || CT.C11], widget_inspector._Location);
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[10] || CT.C10,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 15,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/pages/home_page/home_page.dart"
+      });
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 17,
+        [_Location_line]: 29,
+        [_Location_file]: null
+      });
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 17,
+        [_Location_line]: 30,
+        [_Location_file]: null
+      });
+    },
+    get C13() {
+      return C[13] = dart.constList([C[14] || CT.C14, C[15] || CT.C15], widget_inspector._Location);
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[13] || CT.C13,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 28,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/pages/comment_page/comment_page.dart"
+      });
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 28,
+        [_Location_file]: null
+      });
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "preferredSize",
+        [_Location_column]: 15,
+        [_Location_line]: 32,
+        [_Location_file]: null
+      });
+    },
+    get C17() {
+      return C[17] = dart.constList([C[18] || CT.C18, C[19] || CT.C19], widget_inspector._Location);
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[17] || CT.C17,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 27,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/pages/comment_page/comment_page.dart"
+      });
+    },
+    get C21() {
+      return C[21] = dart.constList([], widget_inspector._Location);
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[21] || CT.C21,
+        [_Location_name]: null,
+        [_Location_column]: 61,
+        [_Location_line]: 46,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/pages/comment_page/comment_page.dart"
+      });
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onTap",
+        [_Location_column]: 15,
+        [_Location_line]: 44,
+        [_Location_file]: null
+      });
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 48,
+        [_Location_file]: null
+      });
+    },
+    get C23() {
+      return C[23] = dart.constList([C[24] || CT.C24, C[25] || CT.C25], widget_inspector._Location);
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[23] || CT.C23,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 43,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/pages/comment_page/comment_page.dart"
+      });
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "bottom",
+        [_Location_column]: 11,
+        [_Location_line]: 27,
+        [_Location_file]: null
+      });
+    },
+    get C29() {
+      return C[29] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "shadowColor",
+        [_Location_column]: 11,
+        [_Location_line]: 33,
+        [_Location_file]: null
+      });
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "actions",
+        [_Location_column]: 11,
+        [_Location_line]: 34,
+        [_Location_file]: null
+      });
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "leading",
+        [_Location_column]: 11,
+        [_Location_line]: 43,
+        [_Location_file]: null
+      });
+    },
+    get C27() {
+      return C[27] = dart.constList([C[28] || CT.C28, C[29] || CT.C29, C[30] || CT.C30, C[31] || CT.C31], widget_inspector._Location);
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[27] || CT.C27,
+        [_Location_name]: null,
+        [_Location_column]: 17,
+        [_Location_line]: 26,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/pages/comment_page/comment_page.dart"
+      });
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 21,
+        [_Location_line]: 57,
+        [_Location_file]: null
+      });
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "thickness",
+        [_Location_column]: 21,
+        [_Location_line]: 58,
+        [_Location_file]: null
+      });
+    },
+    get C36() {
+      return C[36] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "endIndent",
+        [_Location_column]: 21,
+        [_Location_line]: 59,
+        [_Location_file]: null
+      });
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 21,
+        [_Location_line]: 60,
+        [_Location_file]: null
+      });
+    },
+    get C33() {
+      return C[33] = dart.constList([C[34] || CT.C34, C[35] || CT.C35, C[36] || CT.C36, C[37] || CT.C37], widget_inspector._Location);
+    },
+    get C32() {
+      return C[32] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[33] || CT.C33,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 56,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/pages/comment_page/comment_page.dart"
+      });
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 17,
+        [_Location_line]: 55,
+        [_Location_file]: null
+      });
+    },
+    get C39() {
+      return C[39] = dart.constList([C[40] || CT.C40], widget_inspector._Location);
+    },
+    get C38() {
+      return C[38] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[39] || CT.C39,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 54,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/pages/comment_page/comment_page.dart"
+      });
+    },
+    get C43() {
+      return C[43] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "margin",
+        [_Location_column]: 15,
+        [_Location_line]: 53,
+        [_Location_file]: null
+      });
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 54,
+        [_Location_file]: null
+      });
+    },
+    get C42() {
+      return C[42] = dart.constList([C[43] || CT.C43, C[44] || CT.C44], widget_inspector._Location);
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[42] || CT.C42,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 52,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/pages/comment_page/comment_page.dart"
+      });
+    },
+    get C47() {
+      return C[47] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 19,
+        [_Location_line]: 71,
+        [_Location_file]: null
+      });
+    },
+    get C46() {
+      return C[46] = dart.constList([C[47] || CT.C47], widget_inspector._Location);
+    },
+    get C45() {
+      return C[45] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[46] || CT.C46,
+        [_Location_name]: null,
+        [_Location_column]: 17,
+        [_Location_line]: 70,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/pages/comment_page/comment_page.dart"
+      });
+    },
+    get C48() {
+      return C[48] = dart.const({
+        __proto__: edge_insets.EdgeInsets.prototype,
+        [EdgeInsets_bottom]: 0,
+        [EdgeInsets_right]: 0,
+        [EdgeInsets_top]: 40,
+        [EdgeInsets_left]: 0
+      });
+    },
+    get C51() {
+      return C[51] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "maxLines",
+        [_Location_column]: 29,
+        [_Location_line]: 91,
+        [_Location_file]: null
+      });
+    },
+    get C52() {
+      return C[52] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "textAlign",
+        [_Location_column]: 29,
+        [_Location_line]: 92,
+        [_Location_file]: null
+      });
+    },
+    get C53() {
+      return C[53] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 29,
+        [_Location_line]: 93,
+        [_Location_file]: null
+      });
+    },
+    get C54() {
+      return C[54] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "cursorColor",
+        [_Location_column]: 29,
+        [_Location_line]: 94,
+        [_Location_file]: null
+      });
+    },
+    get C55() {
+      return C[55] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "decoration",
+        [_Location_column]: 29,
+        [_Location_line]: 95,
+        [_Location_file]: null
+      });
+    },
+    get C50() {
+      return C[50] = dart.constList([C[51] || CT.C51, C[52] || CT.C52, C[53] || CT.C53, C[54] || CT.C54, C[55] || CT.C55], widget_inspector._Location);
+    },
+    get C49() {
+      return C[49] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[50] || CT.C50,
+        [_Location_name]: null,
+        [_Location_column]: 34,
+        [_Location_line]: 90,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/pages/comment_page/comment_page.dart"
+      });
+    },
+    get C58() {
+      return C[58] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 27,
+        [_Location_line]: 87,
+        [_Location_file]: null
+      });
+    },
+    get C59() {
+      return C[59] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 27,
+        [_Location_line]: 88,
+        [_Location_file]: null
+      });
+    },
+    get C60() {
+      return C[60] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 27,
+        [_Location_line]: 89,
+        [_Location_file]: null
+      });
+    },
+    get C61() {
+      return C[61] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 27,
+        [_Location_line]: 90,
+        [_Location_file]: null
+      });
+    },
+    get C57() {
+      return C[57] = dart.constList([C[58] || CT.C58, C[59] || CT.C59, C[60] || CT.C60, C[61] || CT.C61], widget_inspector._Location);
+    },
+    get C56() {
+      return C[56] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[57] || CT.C57,
+        [_Location_name]: null,
+        [_Location_column]: 23,
+        [_Location_line]: 86,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/pages/comment_page/comment_page.dart"
+      });
+    },
+    get C64() {
+      return C[64] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "crossAxisAlignment",
+        [_Location_column]: 21,
+        [_Location_line]: 80,
+        [_Location_file]: null
+      });
+    },
+    get C65() {
+      return C[65] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 21,
+        [_Location_line]: 81,
+        [_Location_file]: null
+      });
+    },
+    get C63() {
+      return C[63] = dart.constList([C[64] || CT.C64, C[65] || CT.C65], widget_inspector._Location);
+    },
+    get C62() {
+      return C[62] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[63] || CT.C63,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 79,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/pages/comment_page/comment_page.dart"
+      });
+    },
+    get C68() {
+      return C[68] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 19,
+        [_Location_line]: 78,
+        [_Location_file]: null
+      });
+    },
+    get C69() {
+      return C[69] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 79,
+        [_Location_file]: null
+      });
+    },
+    get C67() {
+      return C[67] = dart.constList([C[68] || CT.C68, C[69] || CT.C69], widget_inspector._Location);
+    },
+    get C66() {
+      return C[66] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[67] || CT.C67,
+        [_Location_name]: null,
+        [_Location_column]: 17,
+        [_Location_line]: 77,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/pages/comment_page/comment_page.dart"
+      });
+    },
+    get C72() {
+      return C[72] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "mainAxisAlignment",
+        [_Location_column]: 15,
+        [_Location_line]: 66,
+        [_Location_file]: null
+      });
+    },
+    get C73() {
+      return C[73] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "crossAxisAlignment",
+        [_Location_column]: 15,
+        [_Location_line]: 67,
+        [_Location_file]: null
+      });
+    },
+    get C74() {
+      return C[74] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 15,
+        [_Location_line]: 68,
+        [_Location_file]: null
+      });
+    },
+    get C71() {
+      return C[71] = dart.constList([C[72] || CT.C72, C[73] || CT.C73, C[74] || CT.C74], widget_inspector._Location);
+    },
+    get C70() {
+      return C[70] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[71] || CT.C71,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 65,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/pages/comment_page/comment_page.dart"
+      });
+    },
+    get C77() {
+      return C[77] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 11,
+        [_Location_line]: 51,
+        [_Location_file]: null
+      });
+    },
+    get C76() {
+      return C[76] = dart.constList([C[77] || CT.C77], widget_inspector._Location);
+    },
+    get C75() {
+      return C[75] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[76] || CT.C76,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 50,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/pages/comment_page/comment_page.dart"
+      });
+    },
+    get C80() {
+      return C[80] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "backgroundColor",
+        [_Location_column]: 9,
+        [_Location_line]: 25,
+        [_Location_file]: null
+      });
+    },
+    get C81() {
+      return C[81] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "appBar",
+        [_Location_column]: 9,
+        [_Location_line]: 26,
+        [_Location_file]: null
+      });
+    },
+    get C82() {
+      return C[82] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "body",
+        [_Location_column]: 9,
+        [_Location_line]: 50,
+        [_Location_file]: null
+      });
+    },
+    get C79() {
+      return C[79] = dart.constList([C[80] || CT.C80, C[81] || CT.C81, C[82] || CT.C82], widget_inspector._Location);
+    },
+    get C78() {
+      return C[78] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[79] || CT.C79,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 24,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/pages/comment_page/comment_page.dart"
+      });
+    },
+    get C85() {
+      return C[85] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "debugShowCheckedModeBanner",
+        [_Location_column]: 7,
+        [_Location_line]: 20,
+        [_Location_file]: null
+      });
+    },
+    get C86() {
+      return C[86] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "theme",
+        [_Location_column]: 7,
+        [_Location_line]: 21,
+        [_Location_file]: null
+      });
+    },
+    get C87() {
+      return C[87] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "home",
+        [_Location_column]: 7,
+        [_Location_line]: 24,
+        [_Location_file]: null
+      });
+    },
+    get C84() {
+      return C[84] = dart.constList([C[85] || CT.C85, C[86] || CT.C86, C[87] || CT.C87], widget_inspector._Location);
+    },
+    get C83() {
+      return C[83] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[84] || CT.C84,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 19,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/pages/comment_page/comment_page.dart"
+      });
+    },
+    get C88() {
+      return C[88] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[21] || CT.C21,
+        [_Location_name]: null,
+        [_Location_column]: 59,
+        [_Location_line]: 26,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/utils/tweet_structure/buttons.dart"
+      });
+    },
+    get C91() {
+      return C[91] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 30,
+        [_Location_line]: 28,
+        [_Location_file]: null
+      });
+    },
+    get C90() {
+      return C[90] = dart.constList([C[91] || CT.C91], widget_inspector._Location);
+    },
+    get C89() {
+      return C[89] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[90] || CT.C90,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 28,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/utils/tweet_structure/buttons.dart"
+      });
+    },
+    get C94() {
+      return C[94] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 13,
+        [_Location_line]: 24,
+        [_Location_file]: null
+      });
+    },
+    get C95() {
+      return C[95] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 13,
+        [_Location_line]: 28,
+        [_Location_file]: null
+      });
+    },
+    get C96() {
+      return C[96] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 13,
+        [_Location_line]: 29,
+        [_Location_file]: null
+      });
+    },
+    get C93() {
+      return C[93] = dart.constList([C[94] || CT.C94, C[95] || CT.C95, C[96] || CT.C96], widget_inspector._Location);
+    },
+    get C92() {
+      return C[92] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[93] || CT.C93,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 23,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/utils/tweet_structure/buttons.dart"
+      });
+    },
+    get C99() {
+      return C[99] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 14,
+        [_Location_line]: 30,
+        [_Location_file]: null
+      });
+    },
+    get C100() {
+      return C[100] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 20,
+        [_Location_line]: 30,
+        [_Location_file]: null
+      });
+    },
+    get C98() {
+      return C[98] = dart.constList([C[99] || CT.C99, C[100] || CT.C100], widget_inspector._Location);
+    },
+    get C97() {
+      return C[97] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[98] || CT.C98,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 30,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/utils/tweet_structure/buttons.dart"
+      });
+    },
+    get C103() {
+      return C[103] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 28,
+        [_Location_line]: 39,
+        [_Location_file]: null
+      });
+    },
+    get C102() {
+      return C[102] = dart.constList([C[103] || CT.C103], widget_inspector._Location);
+    },
+    get C101() {
+      return C[101] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[102] || CT.C102,
+        [_Location_name]: null,
+        [_Location_column]: 17,
+        [_Location_line]: 39,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/utils/tweet_structure/buttons.dart"
+      });
+    },
+    get C106() {
+      return C[106] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 11,
+        [_Location_line]: 32,
+        [_Location_file]: null
+      });
+    },
+    get C107() {
+      return C[107] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 11,
+        [_Location_line]: 39,
+        [_Location_file]: null
+      });
+    },
+    get C108() {
+      return C[108] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 11,
+        [_Location_line]: 40,
+        [_Location_file]: null
+      });
+    },
+    get C105() {
+      return C[105] = dart.constList([C[106] || CT.C106, C[107] || CT.C107, C[108] || CT.C108], widget_inspector._Location);
+    },
+    get C104() {
+      return C[104] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[105] || CT.C105,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 31,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/utils/tweet_structure/buttons.dart"
+      });
+    },
+    get C111() {
+      return C[111] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 29,
+        [_Location_line]: 42,
+        [_Location_file]: null
+      });
+    },
+    get C112() {
+      return C[112] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 41,
+        [_Location_line]: 42,
+        [_Location_file]: null
+      });
+    },
+    get C110() {
+      return C[110] = dart.constList([C[111] || CT.C111, C[112] || CT.C112], widget_inspector._Location);
+    },
+    get C109() {
+      return C[109] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[110] || CT.C110,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 42,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/utils/tweet_structure/buttons.dart"
+      });
+    },
+    get C115() {
+      return C[115] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 30,
+        [_Location_line]: 45,
+        [_Location_file]: null
+      });
+    },
+    get C114() {
+      return C[114] = dart.constList([C[115] || CT.C115], widget_inspector._Location);
+    },
+    get C113() {
+      return C[113] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[114] || CT.C114,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 45,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/utils/tweet_structure/buttons.dart"
+      });
+    },
+    get C118() {
+      return C[118] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 13,
+        [_Location_line]: 44,
+        [_Location_file]: null
+      });
+    },
+    get C119() {
+      return C[119] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 13,
+        [_Location_line]: 45,
+        [_Location_file]: null
+      });
+    },
+    get C120() {
+      return C[120] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 13,
+        [_Location_line]: 46,
+        [_Location_file]: null
+      });
+    },
+    get C117() {
+      return C[117] = dart.constList([C[118] || CT.C118, C[119] || CT.C119, C[120] || CT.C120], widget_inspector._Location);
+    },
+    get C116() {
+      return C[116] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[117] || CT.C117,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 43,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/utils/tweet_structure/buttons.dart"
+      });
+    },
+    get C123() {
+      return C[123] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 30,
+        [_Location_line]: 47,
+        [_Location_file]: null
+      });
+    },
+    get C124() {
+      return C[124] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 42,
+        [_Location_line]: 47,
+        [_Location_file]: null
+      });
+    },
+    get C122() {
+      return C[122] = dart.constList([C[123] || CT.C123, C[124] || CT.C124], widget_inspector._Location);
+    },
+    get C121() {
+      return C[121] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[122] || CT.C122,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 47,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/utils/tweet_structure/buttons.dart"
+      });
+    },
+    get C127() {
+      return C[127] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "mainAxisAlignment",
+        [_Location_column]: 7,
+        [_Location_line]: 21,
+        [_Location_file]: null
+      });
+    },
+    get C128() {
+      return C[128] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 7,
+        [_Location_line]: 22,
+        [_Location_file]: null
+      });
+    },
+    get C126() {
+      return C[126] = dart.constList([C[127] || CT.C127, C[128] || CT.C128], widget_inspector._Location);
+    },
+    get C125() {
+      return C[125] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[126] || CT.C126,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 20,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/utils/tweet_structure/buttons.dart"
+      });
+    },
+    get C129() {
+      return C[129] = dart.const({
+        __proto__: edge_insets.EdgeInsets.prototype,
+        [EdgeInsets_bottom]: 3,
+        [EdgeInsets_right]: 0,
+        [EdgeInsets_top]: 15,
+        [EdgeInsets_left]: 0
+      });
+    },
+    get C132() {
+      return C[132] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 13,
+        [_Location_line]: 19,
+        [_Location_file]: null
+      });
+    },
+    get C133() {
+      return C[133] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 13,
+        [_Location_line]: 20,
+        [_Location_file]: null
+      });
+    },
+    get C131() {
+      return C[131] = dart.constList([C[132] || CT.C132, C[133] || CT.C133], widget_inspector._Location);
+    },
+    get C130() {
+      return C[130] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[131] || CT.C131,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 18,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/utils/tweet_structure/tweet_structure.dart"
+      });
+    },
+    get C136() {
+      return C[136] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 13,
+        [_Location_line]: 23,
+        [_Location_file]: null
+      });
+    },
+    get C137() {
+      return C[137] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 13,
+        [_Location_line]: 24,
+        [_Location_file]: null
+      });
+    },
+    get C135() {
+      return C[135] = dart.constList([C[136] || CT.C136, C[137] || CT.C137], widget_inspector._Location);
+    },
+    get C134() {
+      return C[134] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[135] || CT.C135,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 22,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/utils/tweet_structure/tweet_structure.dart"
+      });
+    },
+    get C140() {
+      return C[140] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 9,
+        [_Location_line]: 17,
+        [_Location_file]: null
+      });
+    },
+    get C139() {
+      return C[139] = dart.constList([C[140] || CT.C140], widget_inspector._Location);
+    },
+    get C138() {
+      return C[138] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[139] || CT.C139,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 16,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/utils/tweet_structure/tweet_structure.dart"
+      });
+    },
+    get C143() {
+      return C[143] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 7,
+        [_Location_line]: 15,
+        [_Location_file]: null
+      });
+    },
+    get C144() {
+      return C[144] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 16,
+        [_Location_file]: null
+      });
+    },
+    get C142() {
+      return C[142] = dart.constList([C[143] || CT.C143, C[144] || CT.C144], widget_inspector._Location);
+    },
+    get C141() {
+      return C[141] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[142] || CT.C142,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 14,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/utils/tweet_structure/tweet_structure.dart"
+      });
+    },
+    get C147() {
+      return C[147] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 11,
+        [_Location_line]: 32,
+        [_Location_file]: null
+      });
+    },
+    get C148() {
+      return C[148] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 11,
+        [_Location_line]: 33,
+        [_Location_file]: null
+      });
+    },
+    get C146() {
+      return C[146] = dart.constList([C[147] || CT.C147, C[148] || CT.C148], widget_inspector._Location);
+    },
+    get C145() {
+      return C[145] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[146] || CT.C146,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 31,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/utils/tweet_structure/tweet_structure.dart"
+      });
+    },
+    get C149() {
+      return C[149] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[21] || CT.C21,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 35,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/utils/tweet_structure/tweet_structure.dart"
+      });
+    },
+    get C152() {
+      return C[152] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 7,
+        [_Location_line]: 30,
+        [_Location_file]: null
+      });
+    },
+    get C151() {
+      return C[151] = dart.constList([C[152] || CT.C152], widget_inspector._Location);
+    },
+    get C150() {
+      return C[150] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[151] || CT.C151,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 29,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/utils/tweet_structure/tweet_structure.dart"
+      });
+    },
+    get C155() {
+      return C[155] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 15,
+        [_Location_line]: 41,
+        [_Location_file]: null
+      });
+    },
+    get C156() {
+      return C[156] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 9,
+        [_Location_line]: 42,
+        [_Location_file]: null
+      });
+    },
+    get C154() {
+      return C[154] = dart.constList([C[155] || CT.C155, C[156] || CT.C156], widget_inspector._Location);
+    },
+    get C153() {
+      return C[153] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[154] || CT.C154,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 40,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/utils/tweet_structure/tweet_structure.dart"
+      });
+    },
+    get C159() {
+      return C[159] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 7,
+        [_Location_line]: 39,
+        [_Location_file]: null
+      });
+    },
+    get C160() {
+      return C[160] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 7,
+        [_Location_line]: 40,
+        [_Location_file]: null
+      });
+    },
+    get C158() {
+      return C[158] = dart.constList([C[159] || CT.C159, C[160] || CT.C160], widget_inspector._Location);
+    },
+    get C157() {
+      return C[157] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[158] || CT.C158,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 38,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/utils/tweet_structure/tweet_structure.dart"
+      });
+    },
+    get C163() {
+      return C[163] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "leading",
+        [_Location_column]: 5,
+        [_Location_line]: 13,
+        [_Location_file]: null
+      });
+    },
+    get C164() {
+      return C[164] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 5,
+        [_Location_line]: 14,
+        [_Location_file]: null
+      });
+    },
+    get C165() {
+      return C[165] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "subtitle",
+        [_Location_column]: 5,
+        [_Location_line]: 29,
+        [_Location_file]: null
+      });
+    },
+    get C166() {
+      return C[166] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "trailing",
+        [_Location_column]: 5,
+        [_Location_line]: 38,
+        [_Location_file]: null
+      });
+    },
+    get C162() {
+      return C[162] = dart.constList([C[163] || CT.C163, C[164] || CT.C164, C[165] || CT.C165, C[166] || CT.C166], widget_inspector._Location);
+    },
+    get C161() {
+      return C[161] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[162] || CT.C162,
+        [_Location_name]: null,
+        [_Location_column]: 10,
+        [_Location_line]: 12,
+        [_Location_file]: "file:///C:/Users/HaticeNur/Desktop/github/twitter/lib/utils/tweet_structure/tweet_structure.dart"
+      });
+    }
+  }, false);
+  var C = Array(167).fill(void 0);
+  var I = [
+    "package:flutter_first_app/pages/home_page/home_page.dart",
+    "package:flutter_first_app/pages/comment_page/comment_page.dart",
+    "package:flutter_first_app/utils/tweet_structure/buttons.dart"
+  ];
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  tweeted_out_info.buildTweetedOutInfo = function buildTweetedOutInfo(context) {
+    return new basic.Column.new({children: T.JSArrayOfWidget().of([tweet_structure.buildTweetStructure("https://i.pinimg.com/originals/9f/aa/a1/9faaa1fedc94c355a4256ba6207c7714.png", "Cat Lulu", "This interesting fact about cats is guaranteed to wow at your next dinner party. Did you know that originally it was thought that Egyptians domesticated the cat? But in 2004, French archaeologists discovered a 9,500 year old cat grave in Cyprus. This makes this the oldest known pet cat and it predates Egyptian art about cats by over 4,000 years!", "@cat_lulu.1 saat", context), divider.buildDivider(), tweet_structure.buildTweetStructure("https://i.pinimg.com/originals/9f/aa/a1/9faaa1fedc94c355a4256ba6207c7714.png", "Cat Lulu", "This interesting fact about cats is guaranteed to wow at your next dinner party. Did you know that originally it was thought that Egyptians domesticated the cat? But in 2004, French archaeologists discovered a 9,500 year old cat grave in Cyprus. This makes this the oldest known pet cat and it predates Egyptian art about cats by over 4,000 years!", "@cat_lulu.12 saat", context), divider.buildDivider(), tweet_structure.buildTweetStructure("https://i.pinimg.com/originals/9f/aa/a1/9faaa1fedc94c355a4256ba6207c7714.png", "Cat Lulu", "This interesting fact about cats is guaranteed to wow at your next dinner party. Did you know that originally it was thought that Egyptians domesticated the cat? But in 2004, French archaeologists discovered a 9,500 year old cat grave in Cyprus. This makes this the oldest known pet cat and it predates Egyptian art about cats by over 4,000 years!", "@cat_lulu.1 gün", context), divider.buildDivider(), tweet_structure.buildTweetStructure("https://i.pinimg.com/originals/9f/aa/a1/9faaa1fedc94c355a4256ba6207c7714.png", "Cat Lulu", "This interesting fact about cats is guaranteed to wow at your next dinner party. Did you know that originally it was thought that Egyptians domesticated the cat? But in 2004, French archaeologists discovered a 9,500 year old cat grave in Cyprus. This makes this the oldest known pet cat and it predates Egyptian art about cats by over 4,000 years!", "@cat_lulu.2 gün ", context)]), $creationLocationd_0dea112b090073317d4: C[0] || CT.C0});
+  };
+  home_page.HomePage = class HomePage extends framework.StatefulWidget {
+    createState() {
+      return new home_page._HomePageState.new();
+    }
+  };
+  (home_page.HomePage.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    home_page.HomePage.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = home_page.HomePage.prototype;
+  dart.addTypeTests(home_page.HomePage);
+  dart.addTypeCaches(home_page.HomePage);
+  dart.setMethodSignature(home_page.HomePage, () => ({
+    __proto__: dart.getMethods(home_page.HomePage.__proto__),
+    createState: dart.fnType(home_page._HomePageState, [])
+  }));
+  dart.setLibraryUri(home_page.HomePage, I[0]);
+  home_page._HomePageState = class _HomePageState extends framework.State$(home_page.HomePage) {
+    build(context) {
+      return new scaffold.Scaffold.new({body: new single_child_scroll_view.SingleChildScrollView.new({child: new basic.Column.new({children: T.JSArrayOfWidget().of([story_image_list.buildStoryInfo(context), tweeted_out_info.buildTweetedOutInfo(context)]), $creationLocationd_0dea112b090073317d4: C[3] || CT.C3}), $creationLocationd_0dea112b090073317d4: C[6] || CT.C6}), $creationLocationd_0dea112b090073317d4: C[9] || CT.C9});
+    }
+  };
+  (home_page._HomePageState.new = function() {
+    home_page._HomePageState.__proto__.new.call(this);
+    ;
+  }).prototype = home_page._HomePageState.prototype;
+  dart.addTypeTests(home_page._HomePageState);
+  dart.addTypeCaches(home_page._HomePageState);
+  dart.setMethodSignature(home_page._HomePageState, () => ({
+    __proto__: dart.getMethods(home_page._HomePageState.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
+  }));
+  dart.setLibraryUri(home_page._HomePageState, I[0]);
+  comment_page.CommentPage = class CommentPage extends framework.StatefulWidget {
+    createState() {
+      return new comment_page._CommentPageState.new();
+    }
+  };
+  (comment_page.CommentPage.new = function(opts) {
+    let key = opts && 'key' in opts ? opts.key : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    comment_page.CommentPage.__proto__.new.call(this, {key: key, $creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = comment_page.CommentPage.prototype;
+  dart.addTypeTests(comment_page.CommentPage);
+  dart.addTypeCaches(comment_page.CommentPage);
+  dart.setMethodSignature(comment_page.CommentPage, () => ({
+    __proto__: dart.getMethods(comment_page.CommentPage.__proto__),
+    createState: dart.fnType(comment_page._CommentPageState, [])
+  }));
+  dart.setLibraryUri(comment_page.CommentPage, I[1]);
+  var EdgeInsets_bottom = dart.privateName(edge_insets, "EdgeInsets.bottom");
+  var EdgeInsets_right = dart.privateName(edge_insets, "EdgeInsets.right");
+  var EdgeInsets_top = dart.privateName(edge_insets, "EdgeInsets.top");
+  var EdgeInsets_left = dart.privateName(edge_insets, "EdgeInsets.left");
+  comment_page._CommentPageState = class _CommentPageState extends framework.State$(comment_page.CommentPage) {
+    build(context) {
+      return new app.MaterialApp.new({debugShowCheckedModeBanner: false, theme: theme_data.ThemeData.new({primaryColor: colors.Colors.black}), home: new scaffold.Scaffold.new({backgroundColor: colors.Colors.black, appBar: new app_bar.AppBar.new({bottom: new preferred_size.PreferredSize.new({child: new container.Container.new({color: colors.Colors.grey, height: 1.0, $creationLocationd_0dea112b090073317d4: C[12] || CT.C12}), preferredSize: new ui.Size.fromHeight(3.0), $creationLocationd_0dea112b090073317d4: C[16] || CT.C16}), shadowColor: colors.Colors.black, actions: T.JSArrayOfWidget().of([elevated_button.elevatedButton(context, {title: "  yanıtla  ", textColor: colors.Colors.white, primaryColor: colors.Colors.blue, height: 10.0, radius: 10.0, borderSideColor: colors.Colors.blue})]), leading: new gesture_detector.GestureDetector.new({onTap: dart.fn(() => {
+                navigator.Navigator.push(dart.dynamic, context, new page.MaterialPageRoute.new({builder: dart.fn(context => new home_page.HomePage.new({$creationLocationd_0dea112b090073317d4: C[20] || CT.C20}), T.BuildContextToHomePage())}));
+              }, T.VoidTovoid()), child: blue_icons.buildBlueIcon(icons.Icons.close), $creationLocationd_0dea112b090073317d4: C[22] || CT.C22}), $creationLocationd_0dea112b090073317d4: C[26] || CT.C26}), body: new basic.Row.new({children: T.JSArrayOfWidget().of([new container.Container.new({margin: new edge_insets.EdgeInsets.only({left: 10.0}), child: new basic.Row.new({children: T.JSArrayOfWidget().of([new divider$.VerticalDivider.new({color: colors.Colors.grey, thickness: 3.0, endIndent: 650.0, width: 20.0, $creationLocationd_0dea112b090073317d4: C[32] || CT.C32})]), $creationLocationd_0dea112b090073317d4: C[38] || CT.C38}), $creationLocationd_0dea112b090073317d4: C[41] || CT.C41}), new basic.Column.new({mainAxisAlignment: flex.MainAxisAlignment.start, crossAxisAlignment: flex.CrossAxisAlignment.start, children: T.JSArrayOfWidget().of([divider.buildDivider(), new basic.Row.new({children: T.JSArrayOfWidget().of([title.buildTitle("@cat_dru", colors.Colors.blue, ui.FontWeight.bold, 19.0), title.buildTitle("adlı kişiye yanıt olarak", colors.Colors.grey, ui.FontWeight.normal, 14.0)]), $creationLocationd_0dea112b090073317d4: C[45] || CT.C45}), new basic.Padding.new({padding: C[48] || CT.C48, child: new basic.Row.new({crossAxisAlignment: flex.CrossAxisAlignment.start, children: T.JSArrayOfWidget().of([round_image.buildRoundImage("https://i.pinimg.com/280x280_RS/fb/c7/5c/fbc75cb3c4df45700a84d955333b33b6.jpg", 60.0, 90.0), new container.Container.new({color: colors.Colors.black, height: 200.0, width: 100.0, child: new text_form_field.TextFormField.new({maxLines: 70, textAlign: ui.TextAlign.left, style: new text_style.TextStyle.new({color: colors.Colors.white}), cursorColor: colors.Colors.blue, decoration: new input_decorator.InputDecoration.new({fillColor: colors.Colors.yellow, border: input_border.InputBorder.none}), $creationLocationd_0dea112b090073317d4: C[49] || CT.C49}), $creationLocationd_0dea112b090073317d4: C[56] || CT.C56})]), $creationLocationd_0dea112b090073317d4: C[62] || CT.C62}), $creationLocationd_0dea112b090073317d4: C[66] || CT.C66})]), $creationLocationd_0dea112b090073317d4: C[70] || CT.C70})]), $creationLocationd_0dea112b090073317d4: C[75] || CT.C75}), $creationLocationd_0dea112b090073317d4: C[78] || CT.C78}), $creationLocationd_0dea112b090073317d4: C[83] || CT.C83});
+    }
+  };
+  (comment_page._CommentPageState.new = function() {
+    comment_page._CommentPageState.__proto__.new.call(this);
+    ;
+  }).prototype = comment_page._CommentPageState.prototype;
+  dart.addTypeTests(comment_page._CommentPageState);
+  dart.addTypeCaches(comment_page._CommentPageState);
+  dart.setMethodSignature(comment_page._CommentPageState, () => ({
+    __proto__: dart.getMethods(comment_page._CommentPageState.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
+  }));
+  dart.setLibraryUri(comment_page._CommentPageState, I[1]);
+  buttons.Buttons = class Buttons extends framework.StatefulWidget {
+    createState() {
+      return new buttons._ButtonsState.new();
+    }
+  };
+  (buttons.Buttons.new = function(opts) {
+    let key = opts && 'key' in opts ? opts.key : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    buttons.Buttons.__proto__.new.call(this, {key: key, $creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = buttons.Buttons.prototype;
+  dart.addTypeTests(buttons.Buttons);
+  dart.addTypeCaches(buttons.Buttons);
+  dart.setMethodSignature(buttons.Buttons, () => ({
+    __proto__: dart.getMethods(buttons.Buttons.__proto__),
+    createState: dart.fnType(buttons._ButtonsState, [])
+  }));
+  dart.setLibraryUri(buttons.Buttons, I[2]);
+  var ___ButtonsState_title = dart.privateName(buttons, "_#_ButtonsState#title");
+  buttons._ButtonsState = class _ButtonsState extends framework.State$(buttons.Buttons) {
+    get title() {
+      let t0;
+      t0 = this[___ButtonsState_title];
+      return t0 == null ? dart.throw(new _internal.LateError.fieldNI("title")) : t0;
+    }
+    set title(t0) {
+      this[___ButtonsState_title] = t0;
+    }
+    build(context) {
+      return new basic.Row.new({mainAxisAlignment: flex.MainAxisAlignment.spaceAround, children: T.JSArrayOfWidget().of([new icon_button.IconButton.new({onPressed: dart.fn(() => {
+              navigator.Navigator.push(dart.dynamic, context, new page.MaterialPageRoute.new({builder: dart.fn(context => new comment_page.CommentPage.new({$creationLocationd_0dea112b090073317d4: C[88] || CT.C88}), T.BuildContextToCommentPage())}));
+            }, T.VoidTovoid()), icon: new icon.Icon.new(icons.Icons.ac_unit, {$creationLocationd_0dea112b090073317d4: C[89] || CT.C89}), color: colors.Colors.grey, $creationLocationd_0dea112b090073317d4: C[92] || CT.C92}), new text.Text.new("10", {style: new text_style.TextStyle.new({color: colors.Colors.grey}), $creationLocationd_0dea112b090073317d4: C[97] || CT.C97}), new icon_button.IconButton.new({onPressed: dart.fn(() => {
+              this.setState(dart.fn(() => {
+                let t1, t1$;
+                this.isRetweet = !this.isRetweet;
+                this.isRetweet ? (t1 = this.itemCountFirst, this.itemCountFirst = t1 + 1, t1) : (t1$ = this.itemCountFirst, this.itemCountFirst = t1$ - 1, t1$);
+              }, T.VoidTovoid()));
+            }, T.VoidTovoid()), icon: new icon.Icon.new(icons.Icons.ac_unit, {$creationLocationd_0dea112b090073317d4: C[101] || CT.C101}), color: this.isRetweet ? colors.Colors.white : colors.Colors.green, $creationLocationd_0dea112b090073317d4: C[104] || CT.C104}), new text.Text.new(this.itemCountFirst[$toString](), {style: new text_style.TextStyle.new({color: colors.Colors.grey}), $creationLocationd_0dea112b090073317d4: C[109] || CT.C109}), new icon_button.IconButton.new({onPressed: dart.fn(() => this.setState(dart.fn(() => {
+              let t1;
+              t1 = this.itemCountSecond;
+              this.itemCountSecond = t1 + 1;
+              return t1;
+            }, T.VoidTovoid())), T.VoidTovoid()), icon: new icon.Icon.new(icons.Icons.ac_unit, {$creationLocationd_0dea112b090073317d4: C[113] || CT.C113}), color: colors.Colors.grey, $creationLocationd_0dea112b090073317d4: C[116] || CT.C116}), new text.Text.new(this.itemCountSecond[$toString](), {style: new text_style.TextStyle.new({color: colors.Colors.grey}), $creationLocationd_0dea112b090073317d4: C[121] || CT.C121})]), $creationLocationd_0dea112b090073317d4: C[125] || CT.C125});
+    }
+  };
+  (buttons._ButtonsState.new = function() {
+    this.isRetweet = false;
+    this.isLike = true;
+    this.itemCountFirst = 0;
+    this.itemCountSecond = 0;
+    this.colorChanger = true;
+    this[___ButtonsState_title] = null;
+    buttons._ButtonsState.__proto__.new.call(this);
+    ;
+  }).prototype = buttons._ButtonsState.prototype;
+  dart.addTypeTests(buttons._ButtonsState);
+  dart.addTypeCaches(buttons._ButtonsState);
+  dart.setMethodSignature(buttons._ButtonsState, () => ({
+    __proto__: dart.getMethods(buttons._ButtonsState.__proto__),
+    build: dart.fnType(basic.Row, [framework.BuildContext])
+  }));
+  dart.setGetterSignature(buttons._ButtonsState, () => ({
+    __proto__: dart.getGetters(buttons._ButtonsState.__proto__),
+    title: core.String
+  }));
+  dart.setSetterSignature(buttons._ButtonsState, () => ({
+    __proto__: dart.getSetters(buttons._ButtonsState.__proto__),
+    title: core.String
+  }));
+  dart.setLibraryUri(buttons._ButtonsState, I[2]);
+  dart.setFieldSignature(buttons._ButtonsState, () => ({
+    __proto__: dart.getFields(buttons._ButtonsState.__proto__),
+    isRetweet: dart.fieldType(core.bool),
+    isLike: dart.fieldType(core.bool),
+    itemCountFirst: dart.fieldType(core.int),
+    itemCountSecond: dart.fieldType(core.int),
+    colorChanger: dart.fieldType(core.bool),
+    [___ButtonsState_title]: dart.fieldType(dart.nullable(core.String))
+  }));
+  tweet_structure.buildTweetStructure = function buildTweetStructure(image, title, subtitle, date, context) {
+    return new list_tile.ListTile.new({leading: T.WidgetN().as(round_image_with_border.buildRoundImageWithBorder(image, 30.0, 60.0, 60.0)), title: new basic.Padding.new({padding: C[129] || CT.C129, child: new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new(title, {style: new text_style.TextStyle.new({color: colors.Colors.white}), $creationLocationd_0dea112b090073317d4: C[130] || CT.C130}), new text.Text.new(date, {style: new text_style.TextStyle.new({color: colors.Colors.grey._get(600)}), $creationLocationd_0dea112b090073317d4: C[134] || CT.C134})]), $creationLocationd_0dea112b090073317d4: C[138] || CT.C138}), $creationLocationd_0dea112b090073317d4: C[141] || CT.C141}), subtitle: new basic.Column.new({children: T.JSArrayOfWidget().of([new text.Text.new(subtitle, {style: new text_style.TextStyle.new({color: colors.Colors.white}), $creationLocationd_0dea112b090073317d4: C[145] || CT.C145}), new buttons.Buttons.new({$creationLocationd_0dea112b090073317d4: C[149] || CT.C149})]), $creationLocationd_0dea112b090073317d4: C[150] || CT.C150}), trailing: new icon_button.IconButton.new({onPressed: dart.fn(() => {
+        }, T.VoidTovoid()), icon: new icon.Icon.new(icons.Icons.more_vert, {color: colors.Colors.white, $creationLocationd_0dea112b090073317d4: C[153] || CT.C153}), $creationLocationd_0dea112b090073317d4: C[157] || CT.C157}), $creationLocationd_0dea112b090073317d4: C[161] || CT.C161});
+  };
+  dart.trackLibraries("packages/flutter_first_app/pages/home_page/widgets/tweeted_out_info.dart", {
+    "package:flutter_first_app/pages/home_page/widgets/tweeted_out_info.dart": tweeted_out_info,
+    "package:flutter_first_app/pages/home_page/home_page.dart": home_page,
+    "package:flutter_first_app/pages/comment_page/comment_page.dart": comment_page,
+    "package:flutter_first_app/utils/tweet_structure/buttons.dart": buttons,
+    "package:flutter_first_app/utils/tweet_structure/tweet_structure.dart": tweet_structure
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["tweeted_out_info.dart","../home_page.dart","../../comment_page/comment_page.dart","../../../utils/tweet_structure/buttons.dart","../../../utils/tweet_structure/tweet_structure.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;sEAKwC;AACpC,UAAO,iCACU,wBACZ,oCAAoB,gFAA+E,YAAW,+VAA+V,oBAAmB,OAAO,GACve,wBACA,oCAAoB,gFAA+E,YAAW,+VAA+V,qBAAoB,OAAO,GAC1e,wBACE,oCAAoB,gFAA+E,YAAW,+VAA+V,mBAAkB,OAAO,GACte,wBACA,oCAAoB,gFAA+E,YAAW,+VAA+V,oBAAmB,OAAO;EAG9e;;;ACTgC;IAAgB;;;;;;EAClD;;;;;;;;;UAI4B;AACxB,YAAO,kCACC,+DACG,gCACK,wBACT,gCAAe,OAAO,GACtB,qCAAoB,OAAO;IAKpC;;;;;EAEF;;;;;;;;;;ACdqC;IAAmB;;;QAH9B;;AAAQ,4DAAW,GAAG;;EAAC;;;;;;;;;;;;;UAQrB;AACxB,YAAO,sDACuB,cACrB,wCACgB,6BAEjB,4CACoB,6BAChB,gCACE,6CACG,oCACS,4BACN,+EAEU,uBAAW,8EACf,8BACX,wBACP,+BAAe,OAAO,UACX,0BACW,mCACG,4BACb,cACA,uBACgB,iCAErB,iDACE;AAEmD,gBAD9C,uCAAK,OAAO,EAClB,yCAA2B,QAAC,WAAY;yCAEvC,yBAAoB,gJAE3B,6BACM,wBACR,qCACqB,uCAAW,eACvB,6BACK,wBACR,yCACgB,+BACH,gBACA,cACJ,yLAKf,yCACuC,kDACE,yCAC7B,wBACR,wBACA,6BACY,wBACR,iBAAW,YAAmB,oBAAiB,oBAAM,OACrD,iBAAW,4BAAmC,oBAC/B,sBAAQ,oEAG3B,wDAES,uCACkC,yCAC7B,wBACR,4BACI,iFACA,MACA,OACJ,oCACkB,6BACN,cACD,cACA,iDACK,eACW,0BACd,qCAAwB,oCACX,gCACJ,oDACI,8BACE;IAYhD;;;;;EACF;;;;;;;;;;ACtGiC;IAAe;;;QAH1B;;AAAQ,mDAAW,GAAG;;EAAC;;;;;;;;;;;;AAY/B;;IAAK;;AAAL;IAAK;UAEM;AACrB,YAAO,uCACgC,8CAC3B,wBACR,2CACe;AAEkD,cADjD,uCAAK,OAAO,EAClB,yCAA2B,QAAC,WAAY;sCAExC,kBAAW,wFACH,+EAClB,kBAAK,cAAa,qCAAwB,iFAC1C,2CACa;AAKP,cAJF,cAAS;;AACe,gBAAtB,iBAAY,CAAC;AACkC,gBAA/C,kBAA0B,0BAAd,2BAAc,UAAmB,2BAAd,4BAAc;;sCAI3C,kBAAW,0FACT,iBAAmB,sBAAe,kFAE5C,kBAAK,AAAe,0CAAmB,qCAAwB,mFAC/D,2CACe,cAAM,cAAS;;AAAM;0CAAe;;wDACzC,kBAAW,0FACH,iFAClB,kBAAK,AAAgB,2CAAmB,qCAAwB;IAGtE;;;IAtCK,iBAAY;IACZ,cAAS;IACV,sBAAiB;IACjB,uBAAkB;IACjB,oBAAe;kCACR;;;EAkCd;;;;;;;;;;;;;;;;;;;;;;;;;qEC7CS,OACA,OACA,UACA,MACM;AAEb,UAAO,qDACI,kDAA0B,KAAK,EAAC,MAAG,MAAG,eACxC,0DAEE,6BACK,wBACR,kBACE,KAAK,UACE,qCAAwB,oFAEjC,kBACE,IAAI,UACG,qCAAwB,AAAI,wBAAC,2MAKlC,gCACE,wBACR,kBACE,QAAQ,UACD,qCAAwB,oFAEjC,+JAGM,2CACG;kCACL,kBACE,+BACQ;EAItB","file":"../../../../../../../../../packages/flutter_first_app/pages/home_page/widgets/tweeted_out_info.dart.lib.js"}');
+  // Exports:
+  return {
+    pages__home_page__widgets__tweeted_out_info: tweeted_out_info,
+    pages__home_page__home_page: home_page,
+    pages__comment_page__comment_page: comment_page,
+    utils__tweet_structure__buttons: buttons,
+    utils__tweet_structure__tweet_structure: tweet_structure
+  };
+}));
+
+//# sourceMappingURL=tweeted_out_info.dart.lib.js.map

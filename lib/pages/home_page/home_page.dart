@@ -35,10 +35,14 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             buildStoryInfo(context),
-            ListView.separated(
-                itemBuilder: (context, index) => tweetsPostList(context)[index],
-                separatorBuilder: (context, index) => buildDivider(),
-                itemCount: tweetsPostList(context).length),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 7 / 10,
+              child: ListView.separated(
+                  itemBuilder: (context, index) =>
+                      tweetsPostList(context)[index],
+                  separatorBuilder: (context, index) => buildDivider(),
+                  itemCount: tweetsPostList(context).length),
+            ),
           ],
         ),
       ),

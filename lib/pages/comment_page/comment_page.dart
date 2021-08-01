@@ -41,37 +41,41 @@ class _CommentPageState extends State<CommentPage> {
           ],
           leading: buildAppbarLeading(context),
         ),
-        body: SizedBox(
-          height: MediaQuery.of(context).size.height / 16,
-          child: Column(
-            children: [
-              Row(
+        body: Column(
+          children: [
+            SizedBox(
+              height: MediaQuery.of(context).size.height / 16,
+              child: Row(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 41),
+                    padding: const EdgeInsets.symmetric(horizontal: 43),
                     child: Container(
+                      width: 4,
                       color: Colors.grey,
                     ),
                   ),
-                  Text('@kullaniciadi' + 'adli kisiye yanit olarak'),
+                  Text(
+                    '@kullaniciadi' + 'adli kisiye yanit olarak',
+                    style: TextStyle(color: Colors.white),
+                  ),
                 ],
               ),
-              Row(
-                children: [
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      buildRoundImage(
-                          'https://i.pinimg.com/280x280_RS/fb/c7/5c/fbc75cb3c4df45700a84d955333b33b6.jpg',
-                          60,
-                          90),
-                      buildTextFormField(),
-                    ],
-                  )
-                ],
-              ),
-            ],
-          ),
+            ),
+            Row(
+              children: [
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    buildRoundImage(
+                        'https://i.pinimg.com/280x280_RS/fb/c7/5c/fbc75cb3c4df45700a84d955333b33b6.jpg',
+                        60,
+                        90),
+                    buildTextFormField(),
+                  ],
+                )
+              ],
+            ),
+          ],
         ),
       ),
     );

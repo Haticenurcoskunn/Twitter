@@ -41,7 +41,7 @@ class _MessagePageState extends State<MessagePage> {
               buildTitle(
                   'Mesaj gönder,mesaj al', Colors.white, FontWeight.bold, 30),
               buildTitle(
-                  "   Direkt Mesajlar,sen ve Twitter'daki diğer\nkişiler arasında gerçekleşen özel sohbetlerdir.\n  Tweetleri medyaları ve daha fazlasını paylaşabilirsiniz",
+                  "Direkt Mesajlar,sen ve Twitter'daki diğer kişiler arasında gerçekleşen özel sohbetlerdir.\n  Tweetleri medyaları ve daha fazlasını paylaşabilirsiniz",
                   Colors.grey,
                   FontWeight.normal,
                   18),
